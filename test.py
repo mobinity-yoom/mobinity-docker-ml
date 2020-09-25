@@ -17,7 +17,7 @@ data = json.dumps(
 
 # response 받기
 json_response = sagemaker_client.invoke_endpoint(
-        EndpointName='object-detection-sample-endpoint', # endpoint name
+        EndpointName='object-detection-v1-endpoint', # endpoint name
         ContentType='application/json',
         Body=data
         )
